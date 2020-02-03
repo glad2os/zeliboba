@@ -1,0 +1,163 @@
+/*(двойной дефис) означает вариант элемента.*/
+/*(двойное подчёркивание) означает дочерний элемент.*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 79px;
+    background-color: black;
+    color: white;
+}
+
+.header > img {
+    width: 50px;
+    height: 50px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    justify-content: center;
+    margin: 0 5%;
+}
+
+.nav > button {
+    flex: 1;
+}
+
+.container {
+    margin: 0 20% 2%;
+}
+
+hr {
+    width: 70%;
+    margin: 50px auto;
+}
+
+.title {
+    margin-top: 50px;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.images {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    align-items: center;
+}
+
+.images > .normal {
+    width: 100%;
+    height: 100%;
+    margin: 0 5%;
+}
+
+.images > .small {
+    width: 80%;
+    height: 80%;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.slava {
+    padding: 0 2%;
+    flex: 1;
+}
+
+.ukraine {
+    padding: 0 2%;
+    flex: 2;
+}
+
+.search {
+    display: inline-flex;
+    flex-flow: row;
+}
+
+.search > img {
+    width: 24px;
+}
+
+.item {
+    padding: 2%;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.footer {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 24px 0;
+}
+
+.social {
+    text-align: center;
+}
+
+.social > div {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.social > div > img {
+    margin: 0 20%;
+    width: 24px;
+    height: 24px;
+}
+
+.noname > p {
+    margin-bottom: 8px;
+    margin-left: 4px;
+}
+
+@media screen and (max-width: 768px) {
+    .ukraine {
+        margin-top: 5%;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        flex-direction: column;
+    }
+
+    .item {
+        padding: 2% 0;
+    }
+
+    .item > img {
+        width: 100%;
+
+    }
+}
